@@ -53,9 +53,11 @@ table {
 
 body {
     margin: 0;
+    min-height: 100vh;
 
     display: grid;
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
 #sidebar {
@@ -86,6 +88,7 @@ body {
     grid-template-rows: 1fr 1fr;
     padding: 1rem 2rem;
     justify-items: center;
+    align-items: center;
 }
 
 #upper-topbar {
@@ -96,6 +99,25 @@ body {
 .profile-container-sm {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+#lower-topbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-container-lg {
+    display: flex;
+    gap: 1rem;
+}
+
+.lower-topbar-btn-container {
+    display: flex;
+    gap: 1rem;
 }
 
 main {
