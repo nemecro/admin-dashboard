@@ -233,6 +233,10 @@ p {
     line-height: 1.5;
 }
 
+button {
+    cursor: pointer;
+}
+
 [data-theme="light"] {
     --white: #eff6ff;
     --blue: #93c5fd;
