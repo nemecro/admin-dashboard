@@ -11,11 +11,14 @@ const detectColorScheme = function(){
     }
     if (theme == 'dark'){
         document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light');
     }
     return theme;
 }
 
 let theme = detectColorScheme();
+console.log(theme);
 
 const toggleColor = document.querySelector('#color');
 

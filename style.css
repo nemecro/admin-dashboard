@@ -68,6 +68,11 @@ table {
 
 .profile-pic-lg {
     width: 5rem;
+    border-radius: 5rem;
+}
+
+.profile-pic-sm, .profile-pic-lg {
+    border: 2px solid var(--text);
 }
 
 .profile-header {
@@ -90,6 +95,8 @@ body {
     grid-template-columns: 1fr 5fr;
     grid-template-rows: min-content 1fr;
     min-height: 100vh;
+    background-color: var(--background);
+    color: var(--text);
 }
 
 #sidebar {
@@ -155,7 +162,7 @@ main {
 input {
     width: max(100px, 50%);
     border-radius: 6px;
-    border: 1px solid black;
+    border: 1px solid var(--text);
     font-size: 1rem;
     padding: 0.25rem 0.1rem;
 }
@@ -166,19 +173,20 @@ button.post {
     font-weight: 600;
     background-color: transparent;
     border-radius: 6px;
-    border: 1px solid black;
+    color: var(--text);
+    border: 1px solid var(--text);
 }
 
 button.post:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--text);
+    color: var(--background);
     transition: 250ms;
 }
 
 .nav-link {
     font-size: 1.15rem;
     text-decoration: none;
-    color: black;
+    color: var(--text);
     opacity: 0.7;
 }
 
@@ -298,14 +306,18 @@ button {
     font-style: italic;
 }
 
+.icon, .icon-lg {
+    filter: var(--filter);
+}
+
 [data-theme="light"] {
-    --white: #eff6ff;
-    --blue: #93c5fd;
-    --dark: #3b82f6;
+    --text: #172554;
+    --background: #eff6ff;
+    --filter: invert(14%) sepia(63%) saturate(1114%) hue-rotate(197deg) brightness(91%) contrast(99%);
 }
 
 [data-theme="dark"] {
-    --white: #bae6fd;
-    --blue: #0369a1;
-    --dark: #172554;
+    --text: #eff6ff;
+    --background: #172554;
+    --filter: invert(100%) sepia(33%) saturate(2003%) hue-rotate(177deg) brightness(101%) contrast(101%);; 
 }
