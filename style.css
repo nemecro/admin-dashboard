@@ -161,6 +161,21 @@ input {
     padding: 0.25rem 0.1rem;
 }
 
+button.post {
+    padding: 0.5rem 1rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+button.post:hover {
+    background-color: black;
+    color: white;
+    transition: 250ms;
+}
+
 .profile-container-sm {
     display: flex;
     justify-content: space-between;
@@ -171,8 +186,8 @@ input {
 #lower-topbar {
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 10rem;
 }
 
 
