@@ -72,6 +72,9 @@ table {
 
 .profile-header {
     display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
 }
 
 * {
@@ -191,6 +194,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding: 1rem 0;
 }
 
 .announcement, 
