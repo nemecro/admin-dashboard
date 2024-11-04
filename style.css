@@ -247,6 +247,10 @@ button.post:hover {
     font-weight: bold;
 }
 
+h2.username {
+    margin-bottom: 0;
+}
+
 h2 {
     font-weight: bold;
     font-size: 1.5rem;
@@ -288,6 +292,11 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.profile-header p {
+    font-size: 0.8rem;
+    font-style: italic;
 }
 
 [data-theme="light"] {
