@@ -52,8 +52,26 @@ table {
     font-family: 'Roboto', serif;
 }
 
-.icon {
+.icon-lg {
     width: 1.5rem;
+}
+
+.icon {
+    width: 1rem;
+}
+
+.profile-pic-sm {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.profile-pic-lg {
+    width: 5rem;
+}
+
+.profile-header {
+    display: flex;
 }
 
 * {
