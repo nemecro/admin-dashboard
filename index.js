@@ -12,6 +12,23 @@ const detectColorScheme = function(){
     if (theme == 'dark'){
         document.documentElement.setAttribute('data-theme', 'dark');
     }
+    return theme;
 }
 
-detectColorScheme();
+let theme = detectColorScheme();
+
+const toggleColor = document.querySelector('#color');
+
+const switchTheme = function() {
+    if (theme == 'light'){
+        localStorage.setItem('theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'dark');
+        theme = 'dark';
+    } else {
+        localStorage.setItem('theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'light');
+        theme = 'light';
+    }
+}
+
+toggleColor.addEventListener('click', switchTheme)
