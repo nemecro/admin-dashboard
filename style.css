@@ -153,6 +153,14 @@ main {
     align-items: center;
 }
 
+input {
+    width: max(100px, 50%);
+    border-radius: 6px;
+    border: 1px solid black;
+    font-size: 1rem;
+    padding: 0.25rem 0.1rem;
+}
+
 .profile-container-sm {
     display: flex;
     justify-content: space-between;
