@@ -94,8 +94,7 @@ body {
 
 #sidebar {
     grid-area: sidebar;
-    padding: 0.5rem;
-
+    padding: 0.5rem 1rem;
     display: grid;
     grid-template-rows: 64px repeat(2, 240px);
     gap: 1rem;
@@ -129,7 +128,7 @@ main {
     
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 5rem;
 }
 
 #projects {
